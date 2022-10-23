@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* General CSS for all START*/
+
+.ring {
+    border: 1px solid red;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    /* list-style: none; */
+    /* text-underline-offset: 10px; */
+}
+
+li{
+    /* list-style: none; */
+     
+}
+
+a{
+    
+    text-decoration: none;
+}
+
+
+span{
+    font-size: 2em;
+}
+
+/* General CSS for all END */
+/* Navigation Bar portion START from here  */
+
+
+
+.nav_bar{
+    justify-content: space-between;
+    padding: 2vw;
+    background-color: lightgreen;
+}
+
+.left_text{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.mid_text li{
+    display: inline-block;
+    margin: 0rem 1vw;
+    font-size: 1.8rem;
+    font-weight: bold;
+    
+}
+
+.mid_text a {
+    color: crimson;
+    /* text-decoration: underline; */
+    /* text-underline-offset: 10px; */
+}
+
+
+.mid_text li a:hover{
+    
+    text-decoration: underline crimson;
+    text-underline-offset: 12px;
+    color: white;
+    
+}
+
+
+.right_btn button{
+    padding: 4.5%;
+    margin: 0 0.9vw;
+    width: 5.5vw;
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+/* Navigation Bar portion END from here  */
+/* Positioning using Float START from here */
+
+.heading{
+    text-align: center;
+    padding: 4%;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+.using_float{
+    background-color: rgb(230, 230, 230);
+
+}
+
+ 
+
+
+.block_one, .block_two, .block_three{
+    display: inline-block;
+    /* width: 28%; */
+    width: 430px;
+    height: 390px;
+    border: 2px solid red;
+    border-radius: 0.5rem;
+    margin: 0vh 3vw;
+    margin-bottom: 5rem;
+    padding: 1rem;
+    
+}
+
+.f_left{
+    float: left;
+}
+
+.f_right{
+    float: right;
+}
+
+
+
+.sidekick1, .hero, .sidekick3{
+    
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid red;
+    /* position: relative; */
+    /* left: 35%; */
+    text-align: center;
+    line-height: 6rem; 
+    font-weight: bold;
+    margin: 0.2rem auto;
+}
+
+.sidekick1, .sidekick3 {
+    border: 0.3rem solid lightgreen;
+    border-radius: 0.5rem;
+    background-color: aquamarine;
+
+}
+
+.hero {
+    border: 0.3rem solid red;
+    border-radius: 0.5rem;
+    background-color: orange;
+
+}
+
+
+ 
+
+/* Positioning using Float END from here */
+/* Uniquely Positioning START from here */
+
+.all_block_section_two{
+    flex-wrap: wrap;
+    /* position: relative; */
+}
+.block_one_section_two, .block_two_section_two, .block_three_section_two, .block_four_section_two {
+    width: 410px;
+    height: 390px;
+    border: 2px solid red;
+    border-radius: 0.5rem;
+    margin: 1rem 2rem;
+    padding: 1rem;
+}
+
+.unique_position{
+    margin-bottom: 5%;
+}
+
+
+.hero_position{
+    position: relative;
+    top: 3rem;
+    left: 3.1rem;
+}
+
+.block_three_section_two{
+    position: relative;
+}
+
+
+
+.hero_right{
+    position: absolute;
+    left: 1rem;
+}
+
+.block_four_section_two {
+    position: relative;
+    overflow-y: scroll;
+}
+
+.hero_four{
+    /* position: absolute; */
+    position: relative;
+    top: 400px;
+    /* bottom: 10rem; */
+}
+
+.block_four_section_two p{
+    text-align: justify;
+}
+/* Uniquely Positioning END from here  */
+/* Position using flex from here */
+
+.using_flex{
+    border-bottom: 2px solid red;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex_main_container{
+    background-color: rgb(230, 230, 230);
+    /* display: flex; */
+}
+
+.heading{
+    text-align: center;
+}
+
+
+.flex_main_container h1 span{
+    font-size: 10px;
+}
+
+.item1{
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    line-height: 9rem; 
+    font-weight: bold;
+    margin: 2rem;
+    border: 0.3rem solid lightgreen;
+    border-radius: 0.5rem;
+    background-color: aquamarine;
+}
+
+/* Position using flex from here */
+/* Section for 21 items START here */
+
+.ttwo_items{
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
+    justify-content: space-around;
+     
+    margin: 0 auto;
+}
+
+.item{
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    line-height: 9rem; 
+    font-weight: bold;
+    margin: 0.2rem;
+    border: 0.3rem solid lightgreen;
+    border-radius: 0.5rem;
+    background-color: aquamarine;
+}
+/* Section for 21 items END here */
+/* Section for 5 items START here */
+
+.five_elements{
+    display: flex;
+    /* margin: 5rem 0rem; */
+    padding: 5rem 2rem;
+    border-top: 2px solid red;
+    width: 90%;
+    margin: 0 auto;
+}
+.item3{
+    flex: auto;
+    height: 10rem;
+    text-align: center;
+    line-height: 9rem; 
+    font-weight: bold;
+    margin: 0.2rem;
+    border: 0.3rem solid lightgreen;
+    border-radius: 0.5rem;
+    background-color: aquamarine;
+}
+/* Section for 5 items END here */
+/* Section for LAST 5 items END here  */
+
+.last_elements{
+    justify-content: space-around;
+    padding: 3rem 0rem ;
+    border-top: 2px solid red;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Section for LAST 5 items END here  */
+
+.last_footer{
+    background-color: lightgreen;
+}
+
+.last_footer i{
+    margin: 1.5rem 2rem;
+}
+
+
+
